@@ -1,0 +1,68 @@
+@media only screen and (max-width: 768px){
+    body {
+      overflow-x: hidden;
+    }
+    #qa ,#techflow{
+      padding: 0;
+    }
+    #navbar .link{
+      display: none;
+    }
+    #navbar .mobile-nav{
+      display: block;
+      float: right;
+    }
+    #navbar .mobile-link{
+      background-color: #333;
+      margin-top: 5em;
+    }
+     #navbar .mobile-link a{
+      display: block;
+      color: #fff;
+      width: 15em;
+      padding: 1em;
+      text-align: left;
+     }
+     #navbar .mobile-link a:last-child{
+          background: linear-gradient(90deg, #BF5331, #EF6A5A);
+          border-radius: 7px;
+          padding: 10px 20px 10px 20px;
+     }
+
+     #banner{
+       background-position: bottom;
+       background-image: url("../img/mobile-banner.png");
+       min-height: 45em;
+     }
+     .banner-bt{
+      width: 9em;
+     }
+     #banner  .mf-24 {
+      font-size: 24px;
+     }
+      #banner .mf-60{
+      font-size: 60px;
+     }
+      #banner  .mf-47{
+      font-size: 47px;
+     }
+      #banner  .mf-34{
+      font-size: 34px;
+     }
+      #banner  .mf-14{
+      font-size: 14px;
+     }
+     #banner .item .img-top{
+      width: 15em;
+     }
+
+     .zoom-bt{
+       padding: 2em;
+     }
+     #techflow .center .flow-item {
+      margin-left: 50px;
+     }
+     #course{
+      padding: 0.5em;
+     }
+}

@@ -74,7 +74,7 @@
        padding: 2em;
      }
      #techflow .center .flow-item {
-      margin-left: 50px;
+      margin-left: 20px;
      }
      #course{
       padding: 0.5em;
@@ -122,12 +122,91 @@
      #price{
        min-height: 1200px;
      }
-     #price .center-flex{
-      display: block;
-     }
+    
 
      #price .item{
       margin-top: 40px;
-     
      }
+
+     #course .item{
+      flex-direction: column-reverse;
+     }
+
+     #voice {
+        background-image: none;
+        padding-left: 23px;
+     }
+     #voice .item{
+        flex-direction: column;
+     }
+     #voice .item:nth-child(3){
+        flex-direction: column-reverse;
+     }
+     
+    .inquiry .center-flex{
+      flex-direction: column;
+    }
+    .inquiry .line-bg-3{
+      display: none;
+    }
+    .inquiry span:first-child{
+        position: relative;
+        right: -80px;
+    }
+
+    #price .plan{
+      flex-direction: column;
+    }
+
+    #price img.price-top{
+      max-width: 300px;
+    }
+
+    #case {
+      background-color: #EF6A5A;
+
+      background-image: none;
+      
+      min-height: 1700px;
+      padding: 10px;
+      
+    }
+    #case .item{
+      margin-left: 19px;
+
+    }
+
+    #why .item{
+      display: flex;
+      flex-direction: column;
+      background-repeat: repeat-y;
+    }
+
+    #why .item .img1, #why .item .img3{
+      top: -62px;
+      left: 11px;
+    }
+    #why .item .img2 {
+      position: relative;
+      top: -54px;
+      right: -75px;
+    }
+    #why .item .content{
+      padding-left: 20px;
+      text-align: justify;
+    }
+
+    #why .item .content p.descrption,#why .item .content span.fs-24{
+      display: block;
+      width: 300px;
+      word-wrap: break-word;
+      overflow: hidden; 
+    }
+    #why .title {
+      text-align: center;
+    }
+   #inquiry .overlay, .inquiry .overlay {
+
+      min-height: 700px;
+    }
 }

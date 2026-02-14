@@ -5,6 +5,7 @@
     #qa ,#techflow{
       padding: 0;
     }
+   
     #navbar .link{
       display: none;
     }
@@ -52,6 +53,19 @@
       #banner  .mf-14{
       font-size: 14px;
      }
+
+     .mf-16{
+      font-size: 16px;
+     }
+
+      .mf-26{
+      font-size: 26px;
+     }
+     
+      .mf-20{
+      font-size: 20px;
+     }
+
      #banner .item .img-top{
       width: 15em;
      }
@@ -64,5 +78,56 @@
      }
      #course{
       padding: 0.5em;
+     }
+     #teacher .item{
+      margin-left: 0px;
+     }
+     .swiper{
+      padding: 15px;
+     }
+     .custom-next-button{
+       width: 10px;
+       right: -12px;
+       
+     }
+     .custom-prev-button{
+      width: 10px;
+      left: -12px;
+     }
+
+    
+     #school .item span{
+      float: none;
+      display: block;
+      width: 251px;
+      margin-top: 20px;
+      text-align: center;
+     }
+
+      #school .item span.w-482{
+        text-align: left;
+      }
+      #school img.chatper-two{
+        display: none;
+      }
+      #school .item span img{
+           margin-left: 6em;
+        margin-top: -3em;
+     }
+     #school .title{
+      padding: 1em;
+      margin: 0px 0px;
+     }
+
+     #price{
+       min-height: 1200px;
+     }
+     #price .center-flex{
+      display: block;
+     }
+
+     #price .item{
+      margin-top: 40px;
+     
      }
 }

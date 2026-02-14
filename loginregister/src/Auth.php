@@ -2,24 +2,26 @@
 
 namespace Songjiangfeng\Loginregister;
 
-final class Auth{
+class Auth{
     private $pdo;
 
-    private function __construct() {
-        $host = 'localhost'; 
+    function __construct() {
+        $host = '127.0.0.1'; 
         $dbname = 'db'; 
-        $user = 'root'; 
-        $pass = 'root';
+        $dbuser = 'root'; 
+        $dbpass = '123456';
         $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8mb4";
         try {
-            $this->pdo = new \PDO($dsn, $user, $pass);
+            $this->pdo = new \PDO($dsn, $dbuser, $dbpass);
             $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
         } catch (\PDOException $e) {
             die("Database connection failed: " . $e->getMessage());
         }
     }
 
-    final static function register($username, $password) {
+    public function register($user) {
+        $username = $user['username'];
+        $pass = $user['password'];
         $stmt = $this->pdo->prepare("SELECT id FROM users WHERE username = ?");
         $stmt->execute([$username]);
         if ($stmt->fetch()) {
@@ -41,7 +43,11 @@ final class Auth{
         }
     }
 
-    final static function login($username, $password) {
+    public function login($user) {
+        $username = $user['username'];
+        $pass = $user['password'];
+        echo $userame;
+        echo $pass;
         $stmt = $this->pdo->prepare("SELECT password FROM users WHERE username = ?");
         $stmt->execute([$username]);
         $row = $stmt->fetch();

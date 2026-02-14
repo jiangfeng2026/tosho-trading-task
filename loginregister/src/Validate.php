@@ -4,7 +4,7 @@ namespace Songjiangfeng\Loginregister;
 final class  Validate{
 
    
-    final public static function validate($user) {
+    final  static function validate($user) {
         $username = $user['username'];
         $password = $user['password'];
         if (!self::checkusername($username)) {
@@ -19,12 +19,12 @@ final class  Validate{
     }
    
    
-    final public static function checkpassword($password) {
+    final  static function checkpassword($password) {
         return is_string($password) && strlen($password) >= 8;
     }
 
    
-    final public static function checkusername($username) {
+    final  static function checkusername($username) {
         return is_string($username) && preg_match('/^[a-zA-Z0-9_]{3,32}$/', $username);
     }
     

@@ -21,7 +21,8 @@
         <nav id="navbar">
             <div class="logo"><img src="img/logo.png"></div>
             <div class="mobile-nav"><img src="img/mobile-menu.png"></div>
-             <div class="mobile-link">
+              <div class="mobile-link">
+                <div class="mobile-nav-close"></div>
                 <a href="#voice">受講者の声</a>
                 <a href="#why">選ばれる理由</a>
                 <a href="#techflow">受講料金</a>
@@ -29,6 +30,9 @@
                 <a href="#qa">よくあるご質問</a>
                 <a class="red" href="#inquiry">Zoom無料相談はこちら</a>
             </div>
+            <div class="overlay-nav">
+            </div>
+           
             <div class="link">
                 <a href="#voice">受講者の声</a>
                 <a href="#why">選ばれる理由</a>
@@ -673,12 +677,38 @@
    
     document.querySelector('.mobile-nav').addEventListener('click', () => {
         const mobilelink = document.querySelector('.mobile-link');
-        console.log(mobilelink.style.display );
+        const overlaynav = document.querySelector('.overlay-nav');
         if(mobilelink.style.display == ''||mobilelink.style.display=="none"){
             mobilelink.style.display = "block";
         }else{
             mobilelink.style.display = "none";
         }
+        overlaynav.style.display = "block";
     });
+
+     document.querySelector('.mobile-nav-close').addEventListener('click', () => {
+        const mobilelink = document.querySelector('.mobile-link');
+        const overlaynav = document.querySelector('.overlay-nav');
+
+        if(mobilelink.style.display == ''||mobilelink.style.display=="none"){
+            mobilelink.style.display = "block";
+        }else{
+            mobilelink.style.display = "none";
+        }
+        overlaynav.style.display = "none";
+    });
+
+     document.querySelector('.overlay-nav').addEventListener('click', () => {
+        const mobilelink = document.querySelector('.mobile-link');
+        const overlaynav = document.querySelector('.overlay-nav');
+
+        if(mobilelink.style.display == ''||mobilelink.style.display=="none"){
+            mobilelink.style.display = "block";
+        }else{
+            mobilelink.style.display = "none";
+        }
+        overlaynav.style.display = "none";
+    });
+   
   </script>
 </html>

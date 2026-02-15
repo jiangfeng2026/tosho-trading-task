@@ -401,6 +401,6 @@
     background-repeat: no-repeat;
     background-position: top;
 }
-#navbar .mobile-nav,#navbar .mobile-link{
+#navbar .mobile-nav,#navbar .mobile-link ,#navbar .mobile-nav-close{
     display: none;
 }

@@ -13,8 +13,8 @@ $users = [
     ['username'=>'sam',
     'password'=>'12345678']
 ];
- 
-$user = $users[2];
+
+$user = $users[rand(0,2)];
 $auth = new Auth();
 if(Validate::validate($user)){
     echo "validate success";

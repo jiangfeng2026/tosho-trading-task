@@ -242,4 +242,11 @@
 
       min-height: 700px;
     }
+
+    .swiper-pc{
+      display: none;
+    }
+    .swiper-mobile{
+      display: block;
+    }
 }
